@@ -1,4 +1,4 @@
-// Initialized Github
+// Initialized Github-- because its class
 const github = new Github();
 // Init UI
 const ui = new UI();
@@ -10,7 +10,7 @@ searchUser.addEventListener("keyup", e => {
   // Get input text
   const userText = e.target.value;
   if (userText !== "") {
-    // Make http call
+    // Make http call in github --- then(response)return data from userText
     github.getUser(userText).then(data => {
       if (data.profile.message === "Not Found") {
         // Show Alert
